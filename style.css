@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --db-intro: hsl(217, 28%, 15%);
+  --db-main: hsl(218, 28%, 13%);
+  --db-footer: hsl(216, 53%, 9%);
+  --db-testimonials: hsl(219, 30%, 18%);
+
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --ligth-red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
