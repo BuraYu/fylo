@@ -5,6 +5,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -13,6 +15,7 @@ img {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--db-intro);
 }
 
@@ -33,7 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  padding: 73px 80px;
+  padding: 33px 80px;
   position: relative;
 }
 
@@ -82,6 +85,68 @@ li + li {
   font-weight: 700;
 }
 
+/* Hero section */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-family: "Raleway", sans-serif;
+  color: var(--white);
+  font-size: 2.5rem;
+  max-width: 734px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-section p {
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  font-size: 1.25rem;
+  max-width: 598px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-section span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  background: linear-gradient(to right, #63e1d9, #34a0cd);
+  padding: 19px 95px;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.hero-section span:hover {
+  background: var(--cyan);
+}
+
+.bg-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+}
+
+.bg-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  object-position: bottom center;
+}
+
 @media screen and (max-width: 700px) {
   .navbar {
     padding: 24px 24px 20px;
@@ -91,7 +156,7 @@ li + li {
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 460px) {
   .navbar ul {
     /* display: none; */
   }
