@@ -24,6 +24,7 @@ body {
   --db-main: hsl(218, 28%, 13%);
   --db-footer: hsl(216, 53%, 9%);
   --db-testimonials: hsl(219, 30%, 18%);
+  --db-email: hsl(216, 25%, 15%);
 
   --cyan: hsl(176, 68%, 64%);
   --blue: hsl(198, 60%, 50%);
@@ -321,7 +322,7 @@ li + li {
   text-align: center;
 }
 
-.hero-section span {
+.btn {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: var(--white);
@@ -329,9 +330,10 @@ li + li {
   padding: 19px 95px;
   border-radius: 28px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
-.hero-section span:hover {
+.hero-section .btn:hover {
   background: var(--cyan);
 }
 
@@ -522,6 +524,92 @@ li + li {
 .testimony-name-title .testimony-title {
   font-size: 0.4375rem;
 }
+
+/*email - get started*/
+
+.access-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--db-main);
+  padding-top: 100px;
+}
+
+.access-container {
+  max-width: 860px;
+  display: flex;
+  padding: 42px 95px;
+  gap: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--db-email);
+}
+
+.access-container h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+.access-container p {
+  max-width: 675px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.email-user-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 709;
+}
+
+.email-input {
+}
+
+.email-input input {
+  width: 480px;
+  height: 57px;
+  border: 1px solid #ccc;
+  padding: 0 1.6875rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.email-input input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+}
+
+.email-input input::placeholder {
+  color: #aaa;
+}
+
+.btn2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--white);
+  background: linear-gradient(to right, #63e1d9, #34a0cd);
+  border-radius: 28px;
+  padding: 21px 1.05rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.hero-section .btn2:hover {
+  background: var(--cyan);
+}
+
+/*mobile view*/
 
 @media screen and (max-width: 700px) {
   .navbar {
