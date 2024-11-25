@@ -17,3 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.style.display = "";
   });
 });
+
+document.querySelector(".btn2").addEventListener("click", function () {
+  const emailInput = document.querySelector("#email");
+  const email = emailInput.value;
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const errorMessage = document.querySelector(".error-message");
+
+  if (regex.test(email)) {
+    errorMessage.style.display = "none";
+  } else {
+    errorMessage.style.display = "block";
+  }
+});

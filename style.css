@@ -402,6 +402,15 @@ li + li {
   transition: border-color 0.3s ease;
 }
 
+.error-message {
+  font-family: "Open Sans", sans-serif;
+
+  font-size: 0.85rem;
+  color: red;
+  display: none;
+  margin-left: 20px;
+}
+
 .btn2 {
   flex: 3;
   text-align: center;
