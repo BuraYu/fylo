@@ -176,7 +176,7 @@ li + li {
 }
 
 .content-group-container > .content-container:first-child {
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .content-container {
@@ -365,19 +365,20 @@ li + li {
   text-align: center;
   margin-bottom: 18px;
 }
-
 .email-user-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 709;
+  max-width: 709px;
+  width: 100%;
 }
 
 .email-input {
+  flex: 7;
 }
 
 .email-input input {
-  width: 480px;
+  width: 100%;
   height: 57px;
   border: 1px solid #ccc;
   padding: 0 1.6875rem;
@@ -389,25 +390,21 @@ li + li {
   transition: border-color 0.3s ease;
 }
 
-.email-input input:focus {
-  border-color: #0077ff;
-  box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
-}
-
-.email-input input::placeholder {
-  color: #aaa;
-}
-
 .btn2 {
+  flex: 3;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--white);
   background: linear-gradient(to right, #63e1d9, #34a0cd);
   border-radius: 28px;
-  padding: 21px 1.05rem;
+  padding: 1.3125rem 1.05rem;
   cursor: pointer;
   text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section .btn2:hover {
@@ -509,12 +506,74 @@ li + li {
 
 /*mobile view*/
 
+@media screen and (max-width: 1175px) {
+  .bg-image {
+    display: none;
+  }
+  .description-container {
+    flex-direction: column;
+  }
+  .footer-info {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .navbar {
     padding: 24px 24px 20px;
   }
   li + li {
     margin-left: 24px;
+  }
+  .hero-section {
+    padding: 30px;
+  }
+  .description-container {
+    gap: 40px;
+    padding: 20px 20px;
+  }
+
+  .description-container img:first-child {
+    margin-right: 0;
+  }
+
+  .access-wrapper {
+    padding: 20px 20px;
+  }
+
+  .access-container {
+    padding: 20px 20px;
+  }
+  .access-container h2 {
+    font-size: 1.125rem;
+  }
+
+  .access-container p {
+    font-size: 0.875rem;
+  }
+  .email-user-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .email-user-container input {
+    height: 30px;
+    padding: 24px;
+  }
+  .email-input {
+    width: 100%;
+  }
+
+  .email-input input {
+    width: 100%;
+  }
+  .btn2 {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .testimony-wrapper {
+    gap: 24px;
+    flex-direction: column;
   }
 }
 
@@ -541,7 +600,7 @@ li + li {
   }
 
   li a {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .menu.active {
@@ -586,8 +645,7 @@ li + li {
 
   /*testimoney*/
 
-  .testimony-wrapper {
-    gap: 24px;
-    flex-direction: column;
+  footer {
+    padding: 20px;
   }
 }
