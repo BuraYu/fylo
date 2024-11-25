@@ -70,6 +70,18 @@ body {
   transition: 0.3s;
 }
 
+.close-menu {
+  font-size: 4rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+
 .menu {
   display: flex;
 }
@@ -582,6 +594,10 @@ li + li {
     /* display: none; */
   }
 
+  .menu-element {
+    font-size: 3rem;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -589,7 +605,6 @@ li + li {
   .menu {
     display: none;
     flex-direction: column;
-
     background-color: var(--db-intro);
     position: absolute;
     top: 70px;
@@ -597,10 +612,6 @@ li + li {
     width: 100%;
     text-align: center;
     z-index: 1000;
-  }
-
-  li a {
-    font-size: 1rem;
   }
 
   .menu.active {
@@ -647,5 +658,9 @@ li + li {
 
   footer {
     padding: 20px;
+  }
+
+  li a {
+    font-size: 1rem;
   }
 }
